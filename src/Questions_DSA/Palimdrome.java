@@ -8,7 +8,7 @@ public class Palimdrome {
 
         String reverse="";
         for(int i= Cleaned.length()-1;i>=0;i--){
-           reverse = reverse + Cleaned.charAt(i);
+           reverse = reverse + Cleaned.charAt(i);   
         }
         System.out.println(reverse);
             if(Cleaned.equals(reverse)){
