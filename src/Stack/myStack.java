@@ -18,7 +18,7 @@ public class myStack {
         }
     }
     public boolean isEmpty(){
-        if(index<0){
+        if(index<=0){
             System.out.println("Stack is underflow");
             return true;
         }else{
@@ -50,6 +50,24 @@ public class myStack {
         }
         System.out.println();
     }
+    public void search(int data){
+        if(isEmpty()){
+            return;
+        }
+        int i;
+        for( i=0;i<index;i++){
+            if(arr[i]==data){
+                System.out.println("Element present in stack and index no. is "+i);
+                break;
+            }
+        }
+        if(i>=index){
+            System.out.println("Element not found in Stack");
+        }
+    }
 
+    public void Top(){
+        System.out.println(arr[index-1]);
+    }
 
 }

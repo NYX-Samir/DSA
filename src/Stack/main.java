@@ -12,10 +12,9 @@ package Stack;
         stack.display();
         stack.pop();
         stack.pop();
-        stack.pop();
-        stack.pop();
-        stack.pop();
-        stack.pop();
-
+        stack.display();
+        stack.search(40);
+        stack.display();
+        stack.Top();
      }
 }
